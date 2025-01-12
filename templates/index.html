@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Management</title>
+</head>
+<body>
+    <h1>Welcome to the Event Management System</h1>
+    <form action="/register" method="post">
+        <h2>Register User</h2>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <form action="/create_event" method="post">
+        <h2>Create Event</h2>
+        <input type="text" name="title" placeholder="Event Title" required>
+        <input type="datetime-local" name="date" required>
+        <input type="number" name="user_id" placeholder="User ID" required>
+        <button type="submit">Create Event</button>
+    </form>
+</body>
+</html>
